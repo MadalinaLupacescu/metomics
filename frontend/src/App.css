@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background: #eafaf1; /* Light green background */
+}
+
+.App {
+  text-align: center;
+}
+
+/* Header Section */
+.header-container {
+  background: #4caf50; /* Green header */
+  padding: 20px 15px;
+  color: white;
+  border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.header-buttons {
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background: #4a90e2; /* Primary button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.2s;
+  margin: 0 10px;
+}
+
+.btn:hover {
+  background: #357ab7; /* Slightly darker on hover */
+  transform: translateY(-2px); /* Subtle hover effect */
+}
+
+.btn:active {
+  background: #2a5f89; /* Even darker when clicked */
+  transform: translateY(0);
+}
+
+

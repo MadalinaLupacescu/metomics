@@ -1,0 +1,141 @@
+/* Form Container */
+.form-container {
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 700px;
+  background: white; /* White form box */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], 
+textarea {
+  width: 90%;
+  height: 20px;
+  padding: 5px;
+  margin: 8px 0;
+  font-size: 14px;
+  color: #333;
+  background: #f9f9f9; /* Light input background */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  border-color: #4caf50; /* Green highlight on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  outline: none;
+}
+/* 
+textarea {
+  height: 100px;
+  width: 100%;
+  resize: none;
+} */
+
+/* Submit Button */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background: #4caf50; /* Green submit button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+  background: #43a047; /* Slightly darker green on hover */
+  transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+  background: #388e3c; /* Darker green when clicked */
+  transform: translateY(0);
+}
+
+/* Form Header */
+form h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Inputs, Textareas, and Selects */
+form input,
+form select { 
+  width: 100%; 
+  padding: 5px; /* Reduced padding */
+  margin-bottom: 15px; /* Reduced margin */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #333;
+  box-sizing: border-box; 
+}
+
+button[type="submit"] {
+  background-color: #007bff; /* Blue color */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding for the button */
+  font-size: 16px; /* Text size */
+  font-weight: bold; /* Bold text */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and click effects */
+}
+
+/* Hover effect */
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Active/Pressed effect */
+button[type="submit"]:active {
+  transform: scale(0.95); /* Slightly smaller on click */
+}
+
+/* Disabled state */
+button[type="submit"]:disabled {
+  background-color: #cccccc; /* Light gray when disabled */
+  cursor: not-allowed; /* Indicate it's not clickable */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    width: 95%;
+    padding: 15px;
+  }
+
+  form h2 {
+    font-size: 20px;
+  }
+
+  form button[type="submit"] {
+    font-size: 14px;
+  }
+}
+
